@@ -1,1 +1,113 @@
 /*包括所有的css样式*/
+/*公有样式*/
+html,body{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+ul li{
+  list-style: none;
+}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{overflow:hidden;_zoom:1;}
+.protein-container{
+  margin: 10px auto 10px auto;
+  width: 1000px;
+  height: auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.common-margin{
+  margin: 15px 30px 15px 30px;
+}
+.common-border{
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+}
+.common-padding{
+  padding: 10px 20px;
+}
+.display-none{
+  display: none;
+}
+/*公有样式*/
+/*分类页面样式*/
+.title{
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 22px;
+  font-weight: bold;
+  color: black;
+  font-style: normal;
+}
+.nav{}
+.nav-son{
+  float: left;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+.nav-son:last-child{
+  float: right;
+}
+.nav-son a{
+  color: black;
+}
+.show-container{
+}
+.show-container-title{
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.left{
+  float: left;
+}
+.right{
+  margin: 15px;
+  float: left;
+  word-wrap: break-word;
+  max-width: 690px;
+  max-height: 600px;
+  height: 600px;
+  width: 690px;
+  overflow-y: auto;
+}
+.list{
+  margin: 15px;
+  padding: 10px 20px;
+
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+.list a{
+  color: black;
+}
+.select-name{
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.select-data{
+  margin-top: 20px;
+  margin-left: 100px;
+}
+#s1{
+  padding: 5px 20px 5px 20px;
+
+}
+#s1 option{
+  text-align: center;
+}
+.select-data button{
+  padding: 5px 5px 5px 5px;
+  border-radius: 5px;
+  outline: none;
+  background-color: white;
+}
+/*分类页面样式*/
