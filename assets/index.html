@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles/style.css">
     <title>welcome</title>
 </head>
@@ -35,9 +35,9 @@
           <div class="list common-border"><a href="#">最终结果</a></div>
         </div>
         <div class="right common-border">
-          <div class="load-data display-none">
+          <div class="load-data">
             <div class="select-name">请选择数据：</div>
-            <div class="select-data">
+            <!--<div class="select-data">
               <select name="sd" id="s1">
                 <option value="0">data1</option>
                 <option value="1">data2</option>
@@ -45,9 +45,74 @@
                 <option value="3">data4</option>
               </select>
               <button>load</button>
+            </div>-->
+            <div class="classify-data-table">
+              <table class="table table-bordered">
+                <thead>
+                <tr>
+                  <td class="text-center"> 名称</td>
+                  <td class="text-center">数量</td>
+                  <td class="text-center">数据版本信息</td>
+                  <td class="text-center">选择数据</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td class="text-center">data1</td>
+                  <td class="text-center">10000</td>
+                  <td class="text-center">2015.09.09</td>
+                  <td class="text-center"><button class="btn btn-primary">load</button></td>
+                </tr>
+                <tr>
+                  <td class="text-center">data1</td>
+                  <td class="text-center">10000</td>
+                  <td class="text-center">2015.09.09</td>
+                  <td class="text-center"><button class="btn btn-primary">load</button></td>
+                </tr>
+                <tr>
+                  <td class="text-center">data1</td>
+                  <td class="text-center">10000</td>
+                  <td class="text-center">2015.09.09</td>
+                  <td class="text-center"><button class="btn btn-primary">load</button></td>
+                </tr>
+                <tr>
+                  <td class="text-center">data1</td>
+                  <td class="text-center">10000</td>
+                  <td class="text-center">2015.09.09</td>
+                  <td class="text-center"><button class="btn btn-primary">load</button></td>
+                </tr>
+                <tr>
+                  <td class="text-center">data1</td>
+                  <td class="text-center">10000</td>
+                  <td class="text-center">2015.09.09</td>
+                  <td class="text-center"><button class="btn btn-primary">load</button></td>
+                </tr>
+                <tr>
+                  <td class="text-center">data1</td>
+                  <td class="text-center">10000</td>
+                  <td class="text-center">2015.09.09</td>
+                  <td class="text-center"><button class="btn btn-primary">load</button></td>
+                </tr><tr>
+                  <td class="text-center">data1</td>
+                  <td class="text-center">10000</td>
+                  <td class="text-center">2015.09.09</td>
+                  <td class="text-center"><button class="btn btn-primary">load</button></td>
+                </tr>
+                <tr>
+                  <td class="text-center">data1</td>
+                  <td class="text-center">10000</td>
+                  <td class="text-center">2015.09.09</td>
+                  <td class="text-center"><button class="btn btn-primary">load</button></td>
+                </tr>
+
+
+                </tbody>
+              </table>
             </div>
           </div>
-          <div class="classify-data display-none"></div>
+          <div class="classify-data">
+
+          </div>
           <div class="classify-result display-none"></div>
           <div class="self-classify display-none"></div>
           <div class="blast display-none">asdasdasd</div>
@@ -57,11 +122,13 @@
       </div>
     </div>
   </div>
+
   <div class="hidden-block"></div>
 
-  <div class=""></div>
+
 <script src="js/jquery-2.1.4.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
 <script src="js/common.js"></script>
 
 </body>

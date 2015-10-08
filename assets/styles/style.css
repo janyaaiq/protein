@@ -107,10 +107,11 @@ ul{
   margin-left: 100px;
 }
 #s1{
-  padding: 5px 20px 5px 20px;
-
+  width: 300px;
+  padding: 5px 5px 5px 5px;
+  text-align: center;
 }
-#s1 option{
+select#s1 option{
   text-align: center;
 }
 .select-data button{
