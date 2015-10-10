@@ -120,5 +120,40 @@ select#s1 option{
   outline: none;
   background-color: white;
 }
+table tr td{
+  text-align: center;
+}
+.blast button{
+  margin-left: 20px;
+  width: 200px;
+}
+.btn-download{
+  margin-left: 20px;
+  width: 200px;
+}
+.load-data table,.blast-table>table,.end-result-table>table{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 93%;
+}
 /*分类页面样式*/
+/*login页面*/
+.login-div-title{
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  color: black;
+}
+.login-div{
 
+  position: absolute;
+  width: 600px;
+  height: auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+/*login页面*/
