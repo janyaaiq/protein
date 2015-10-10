@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>welcome</title>
+</head>
+<body style="background-color: #f0f0f0">
+  <div class="login-div">
+    <div class="login-div-title">Log In</div>
+    <div class="login-div-form">
+      <form class="form-horizontal">
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Username:</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputEmail3" placeholder="username">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputPassword3" class="col-sm-2 control-label">Password:</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword3" placeholder="password">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Remember this login information?
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-primary">Login</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<script src="js/common.js"></script>
+  <script>
+    $(function(){
+      set_login_div_position();
+    });
+    function set_login_div_position(){
+      var obj = $(".login-div");
+      var self_width = parseInt(obj.css("width"));
+      var self_height = parseInt(obj.css("height"));
+      var client_height = $(window.document).height();
+      var client_width = $(window.document).width();
+      var self_top = (client_height - self_height) / 2;
+      var self_left = (client_width - self_width) / 2;
+      obj.css("top",self_top+"px");
+      obj.css("left",self_left+"px");
+    }
+  </script>
+</body>
+</html>

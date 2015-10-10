@@ -14,38 +14,39 @@
 
 <body style="background-color: #f0f0f0">
   <div class="protein-container common-border">
+    <!-- 页面标题-->
     <div class="title common-border common-margin">蛋白质分类</div>
-    <div class="nav clearfix  common-margin">
-      <div class="nav-son common-border common-margin"><a href="#">简介</a></div>
-      <div class="nav-son common-border common-margin"><a href="#">分类</a></div>
-      <div class="nav-son common-border common-margin"><a href="#">下载</a></div>
-      <div class="nav-son common-border common-margin"><a href="#">操作记录</a></div>
-      <div class="nav-son common-border common-margin"><a href="#">帮助</a></div>
-      <div class="nav-son common-border common-margin"><a href="#">登录</a></div>
+    <!-- 页面标题-->
+    <!-- 页面导航-->
+    <div class="nav clearfix  common-margin common-border">
+      <div class="nav-son common-border common-margin bg-info"><a href="#">简介</a></div>
+      <div class="nav-son common-border common-margin bg-primary"><a href="#">分类</a></div>
+      <div class="nav-son common-border common-margin bg-info"><a href="#">下载</a></div>
+      <div class="nav-son common-border common-margin bg-info"><a href="#">操作记录</a></div>
+      <div class="nav-son common-border common-margin bg-info"><a href="#">帮助</a></div>
+      <div class="nav-son common-border common-margin bg-info"><a href="#">登录</a></div>
     </div>
+    <!-- 页面导航-->
+    <!-- 展示内容区域-->
     <div class="show-container common-margin common-border">
       <!--<div class="show-container-title common-margin">分类页面</div>-->
-      <div class="show-container-content common-margin common-border clearfix">
+      <!-- 展示内容区域-->
+      <div class="show-container-content common-margin clearfix">
+        <!-- 左边部分-->
         <div class="left">
-          <div class="list common-border"><a href="#">load数据</a></div>
-          <div class="list common-border"><a href="#">数据分类</a></div>
-          <div class="list common-border"><a href="#">分类结果</a></div>
-          <div class="list common-border"><a href="#">手动分类</a></div>
-          <div class="list common-border"><a href="#">blast</a></div>
-          <div class="list common-border"><a href="#">最终结果</a></div>
+          <div class="list"><button class="btn btn-primary" onclick="show_page('load-data')">load数据</button></div>
+          <div class="list"><button class="btn btn-primary" onclick="show_page('classify-data')">数据分类</button></div>
+          <div class="list"><button class="btn btn-primary" onclick="show_page('classify-result')">分类结果</button></div>
+          <div class="list"><button class="btn btn-primary" onclick="show_page('self-classify')">手动分类</button></div>
+          <div class="list"><button class="btn btn-primary" onclick="show_page('blast')">blast</button></div>
+          <div class="list"><button class="btn btn-primary" onclick="show_page('end-result')">最终结果</button></div>
         </div>
+        <!-- 左边部分-->
+        <!-- 右边部分-->
         <div class="right common-border">
-          <div class="load-data">
+          <!-- load数据模块-->
+          <div class="load-data display-none">
             <div class="select-name">请选择数据：</div>
-            <!--<div class="select-data">
-              <select name="sd" id="s1">
-                <option value="0">data1</option>
-                <option value="1">data2</option>
-                <option value="2">data3</option>
-                <option value="3">data4</option>
-              </select>
-              <button>load</button>
-            </div>-->
             <div class="classify-data-table">
               <table class="table table-bordered">
                 <thead>
@@ -69,67 +70,185 @@
                   <td class="text-center">2015.09.09</td>
                   <td class="text-center"><button class="btn btn-primary">load</button></td>
                 </tr>
-                <tr>
-                  <td class="text-center">data1</td>
-                  <td class="text-center">10000</td>
-                  <td class="text-center">2015.09.09</td>
-                  <td class="text-center"><button class="btn btn-primary">load</button></td>
-                </tr>
-                <tr>
-                  <td class="text-center">data1</td>
-                  <td class="text-center">10000</td>
-                  <td class="text-center">2015.09.09</td>
-                  <td class="text-center"><button class="btn btn-primary">load</button></td>
-                </tr>
-                <tr>
-                  <td class="text-center">data1</td>
-                  <td class="text-center">10000</td>
-                  <td class="text-center">2015.09.09</td>
-                  <td class="text-center"><button class="btn btn-primary">load</button></td>
-                </tr>
-                <tr>
-                  <td class="text-center">data1</td>
-                  <td class="text-center">10000</td>
-                  <td class="text-center">2015.09.09</td>
-                  <td class="text-center"><button class="btn btn-primary">load</button></td>
-                </tr><tr>
-                  <td class="text-center">data1</td>
-                  <td class="text-center">10000</td>
-                  <td class="text-center">2015.09.09</td>
-                  <td class="text-center"><button class="btn btn-primary">load</button></td>
-                </tr>
-                <tr>
-                  <td class="text-center">data1</td>
-                  <td class="text-center">10000</td>
-                  <td class="text-center">2015.09.09</td>
-                  <td class="text-center"><button class="btn btn-primary">load</button></td>
-                </tr>
-
-
                 </tbody>
               </table>
             </div>
           </div>
-          <div class="classify-data">
-
+          <!-- load数据模块-->
+          <!-- 数据分类模块-->
+          <div class="classify-data display-none">数据分类</div>
+          <!-- 数据分类模块-->
+          <!-- 分类结果模块-->
+          <div class="classify-result display-none">分类结果</div>
+          <!-- 分类结果模块-->
+          <!-- 手动分类模块-->
+          <div class="self-classify display-none">手动分类</div>
+          <!-- 手动分类模块-->
+          <!-- blast模块-->
+          <div class="blast display-none">
+            <div class="blast-table">
+              <table class="table table-bordered">
+                <thead>
+                <tr>
+                  <td>class</td>
+                  <td>类1</td>
+                  <td>类2</td>
+                  <td>类3</td>
+                  <td>类4</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>G</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>G</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+            <button class="btn btn-primary">blast</button>
           </div>
-          <div class="classify-result display-none"></div>
-          <div class="self-classify display-none"></div>
-          <div class="blast display-none">asdasdasd</div>
-          <div class="end-result display-none"></div>
+          <!-- blast模块-->
+          <!-- 最终结果模块-->
+          <div class="end-result display-none">
+            <div class="end-result-table">
+              <table class="table table-bordered">
+                <thead>
+                <tr>
+                  <td>列名1</td>
+                  <td>列名2</td>
+                  <td>列名3</td>
+                  <td>列名4</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>a</td>
+                  <td>a</td>
+                  <td>a</td>
+                  <td>a</td>
+                </tr>
+                <tr>
+                  <td>a</td>
+                  <td>a</td>
+                  <td>a</td>
+                  <td>a</td>
+                </tr>
+                <tr>
+                  <td>a</td>
+                  <td>a</td>
+                  <td>a</td>
+                  <td>a</td>
+                </tr>
+                <tr>
+                  <td>a</td>
+                  <td>a</td>
+                  <td>a</td>
+                  <td>a</td>
+                </tr>
+                <tr>
+                  <td>a</td>
+                  <td>a</td>
+                  <td>a</td>
+                  <td>a</td>
+                </tr>
+                <tr>
+                  <td>a</td>
+                  <td>a</td>
+                  <td>a</td>
+                  <td>a</td>
+                </tr>
+                </tbody>
+              </table>
+              <button class="btn btn-primary btn-download">download</button>
+            </div>
+          </div>
+          <!-- 最终结果模块-->
 
+        </div>
+        <!-- 右边部分-->
+      </div>
+      <!-- 展示内容区域-->
+    </div>
+    <!-- 展示内容区域-->
+  </div>
+
+  <div class="hidden-block"></div>
+  <!-- 模态框（Modal） -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+       aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close"
+                  data-dismiss="modal" aria-hidden="true">
+            &times;
+          </button>
+          <h4 class="modal-title" id="myModalLabel">
+            <!--模态框（Modal）标题-->
+          </h4>
+        </div>
+        <div class="modal-body">
+          是否进行分类？
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary"
+                  data-dismiss="modal">取消
+          </button>
+          <button type="button" class="btn btn-warning" data-dismiss="modal">
+            确认
+          </button>
+        </div>
+      </div>
+    </div>
+    </div>
+  <!-- /.modal -->
+
+
+  <!-- 模态框（Modal） -->
+  <div class="modal fade" id="myModal2" tabindex="-1" role="dialog"
+       aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close"
+                  data-dismiss="modal" aria-hidden="true">
+            &times;
+          </button>
+          <h4 class="modal-title" id="myModalLabel2">
+            <!--模态框（Modal）标题-->
+          </h4>
+        </div>
+        <div class="modal-body">
+          是否下载数据？
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary"
+                  data-dismiss="modal">取消
+          </button>
+          <button type="button" class="btn btn-warning" data-dismiss="modal">
+            确认
+          </button>
         </div>
       </div>
     </div>
   </div>
-
-  <div class="hidden-block"></div>
-
+  <!-- /.modal -->
 
 <script src="js/jquery-2.1.4.min.js"></script>
   <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 <script src="js/common.js"></script>
+
 
 </body>
 </html>
