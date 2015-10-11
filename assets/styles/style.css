@@ -59,6 +59,11 @@ ul{
   font-weight: bold;
   text-align: center;
 }
+.nav-son:hover{
+  background-color: #337ab7;
+  color: white;
+}
+
 .nav-son:last-child{
   float: right;
 }
@@ -66,6 +71,10 @@ ul{
   color: black;
 }
 .show-container{
+  height: 600px;
+}
+.show-container-content{
+  height: 600px;
 }
 .show-container-title{
   padding: 10px 20px;
@@ -137,6 +146,10 @@ table tr td{
   margin-left: auto;
   margin-right: auto;
   width: 93%;
+}
+.show-container-content,.jianjie,.download,.operation,.help{
+  display: none;
+  height: 600px;
 }
 /*分类页面样式*/
 /*login页面*/
