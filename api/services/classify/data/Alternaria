@@ -1,0 +1,534 @@
+LOCUS       AIG55095                 139 aa            linear   PLN 28-JUL-2014
+DEFINITION  major allergen alt a1, partial [Alternaria palandui].
+ACCESSION   AIG55095
+VERSION     AIG55095.1  GI:667480965
+DBSOURCE    accession KJ862259.1
+KEYWORDS    .
+SOURCE      Alternaria palandui
+  ORGANISM  Alternaria palandui
+            Eukaryota; Fungi; Dikarya; Ascomycota; Pezizomycotina;
+            Dothideomycetes; Pleosporomycetidae; Pleosporales; Pleosporineae;
+            Pleosporaceae; Alternaria.
+REFERENCE   1  (residues 1 to 139)
+  AUTHORS   Paul,N.C., Deng,J.X., Lee,J.H., Lee,H.B. and Yu,S.H.
+  TITLE     Alternaria bariana sp. nov., a new species from Bangladesh on seeds
+            of Cucurbita maxima (Cucurbitaceae)
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 139)
+  AUTHORS   Paul,N.C., Deng,J.X., Lee,J.H., Lee,H.B. and Yu,S.H.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (22-MAY-2014) Applied Bioscience & Biotechnology, Chonnam
+            National University, 77 Yongbong-ro, Buk-gu, Gwangju 500-757,
+            Republic of Korea
+FEATURES             Location/Qualifiers
+     source          1..139
+                     /organism="Alternaria palandui"
+                     /strain="EGS 37-005"
+                     /isolate="CNU131062"
+                     /db_xref="taxon:365012"
+                     /collected_by="NC Paul,JX Deng"
+                     /identified_by="JX Deng,NC Paul"
+     Protein         <1..>139
+                     /product="major allergen alt a1"
+     Region          19..139
+                     /region_name="Alt_A1"
+                     /note="Alternaria alternata allergen Alt a 1; cd12798"
+                     /db_xref="CDD:213998"
+     Site            order(77..79,91,93,98..100,111..116,118,138)
+                     /site_type="other"
+                     /note="homodimer interface [polypeptide binding]"
+                     /db_xref="CDD:213998"
+     CDS             1..139
+                     /gene="Alt a1"
+                     /coded_by="join(KJ862259.1:<1..314,KJ862259.1:375..>480)"
+                     /note="major allergen alt a1"
+                     /codon_start=2
+ORIGIN      
+        1 slfaaaglaa aaplesrqdt ascpvttegd yvwkisefyg rkpegtyyns lgfnikatng
+       61 gtldftcsaq adkledhkwy scgensfmdf sfdsdrsgll lkqkdipsit yvatatlpny
+      121 craggngpkd fvcqgvada
+//
+
+LOCUS       AJU15342                 135 aa            linear   PLN 18-MAR-2015
+DEFINITION  Alt a 1 allergen, partial [Alternaria sp. HGUP6006].
+ACCESSION   AJU15342
+VERSION     AJU15342.1  GI:768321707
+DBSOURCE    accession KP694243.1
+KEYWORDS    .
+SOURCE      Alternaria sp. HGUP6006
+  ORGANISM  Alternaria sp. HGUP6006
+            Eukaryota; Fungi; Dikarya; Ascomycota; Pezizomycotina;
+            Dothideomycetes; Pleosporomycetidae; Pleosporales; Pleosporineae;
+            Pleosporaceae; Alternaria.
+REFERENCE   1  (residues 1 to 135)
+  AUTHORS   Yang,Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (24-JAN-2015) Guizhou University, Xiahui Road Huaxi,
+            Guiyang, Guizhou 550025, China
+FEATURES             Location/Qualifiers
+     source          1..135
+                     /organism="Alternaria sp. HGUP6006"
+                     /strain="HGUP6006"
+                     /host="Eriobotrya japonica"
+                     /db_xref="taxon:1618161"
+                     /collection_date="15-May-2013"
+     Protein         <1..>135
+                     /product="Alt a 1 allergen"
+     Region          10..135
+                     /region_name="Alt_A1"
+                     /note="Alternaria alternata allergen Alt a 1; cd12798"
+                     /db_xref="CDD:213998"
+     Site            order(68..70,82,84,89..91,102..107,109,129,131,133..135)
+                     /site_type="other"
+                     /note="homodimer interface [polypeptide binding]"
+                     /db_xref="CDD:213998"
+     CDS             1..135
+                     /coded_by="join(KP694243.1:<1..297,KP694243.1:358..>466)"
+                     /codon_start=2
+ORIGIN      
+        1 aaaplesrqd tascpvtteg dyvwkisefy grkpegtyyn slgfnikatn ggtldftcsh
+       61 sadkledhtw yscgensfmd fsfdsdrngl llkqkvsddi tyvatatlpn ycraggngpk
+      121 dfvcqgvada yitlv
+//
+
+LOCUS       BAQ20769                 142 aa            linear   PLN 15-JAN-2015
+DEFINITION  major allergen alt a1, partial [Alternaria cinerariae].
+ACCESSION   BAQ20769
+VERSION     BAQ20769.1  GI:747744196
+DBSOURCE    accession AB906671.1
+KEYWORDS    .
+SOURCE      Alternaria cinerariae
+  ORGANISM  Alternaria cinerariae
+            Eukaryota; Fungi; Dikarya; Ascomycota; Pezizomycotina;
+            Dothideomycetes; Pleosporomycetidae; Pleosporales; Pleosporineae;
+            Pleosporaceae; Alternaria.
+REFERENCE   1
+  AUTHORS   Nishikawa,J. and Nakashima,C.
+  TITLE     Morphological variation and experimental host range of Alternaria
+            cinerariae
+  JOURNAL   Mycoscience 56, 141-149 (2015)
+  REMARK    DOI:10.1016/j.myc.2014.05.001
+REFERENCE   2  (residues 1 to 142)
+  AUTHORS   Nakashima,C. and Nishikawa,J.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (28-JAN-2014) Contact:Chiharu Nakashima Mie University,
+            Graduate school of Bioresources; 1577 Kurima-machiya, Tsu, Mie
+            514-8507, Japan E-mail :chiharu@bio.mie-u.ac.jp Fax :81-59-231-9540
+FEATURES             Location/Qualifiers
+     source          1..142
+                     /organism="Alternaria cinerariae"
+                     /isolate="MAFF<JPN>:243059"
+                     /host="Cineraria sp."
+                     /culture_collection="MAFF<JPN>:243059"
+                     /db_xref="taxon:216837"
+     Protein         <1..>142
+                     /product="major allergen alt a1"
+     Region          19..142
+                     /region_name="Alt_A1"
+                     /note="Alternaria alternata allergen Alt a 1; cd12798"
+                     /db_xref="CDD:213998"
+     Site            order(75..77,89,91,96..98,109..114,116,136,138,140..142)
+                     /site_type="other"
+                     /note="homodimer interface [polypeptide binding]"
+                     /db_xref="CDD:213998"
+     CDS             1..142
+                     /gene="alt a 1"
+                     /coded_by="join(AB906671.1:<1..317,AB906671.1:378..>486)"
+ORIGIN      
+        1 faaaglaaaa plesrqdnas cpvttqgdyv wkisefygrk pegtyynslg fnikatnggt
+       61 ldftcsasad kledgkwypc dkdnfmefsf dsdrsglllk qkvsddityv atatlpnycr
+      121 aggngpkdfv cqgvsdayit lv
+//
+
+LOCUS       AIZ66408                 132 aa            linear   PLN 16-DEC-2014
+DEFINITION  major allergen alt a1, partial [Embellisia astragali].
+ACCESSION   AIZ66408
+VERSION     AIZ66408.1  GI:731772578
+DBSOURCE    accession KM457064.1
+KEYWORDS    .
+SOURCE      Embellisia astragali
+  ORGANISM  Embellisia astragali
+            Eukaryota; Fungi; Dikarya; Ascomycota; Pezizomycotina;
+            Dothideomycetes; Pleosporomycetidae; Pleosporales; Pleosporineae;
+            Pleosporaceae; Embellisia.
+REFERENCE   1  (residues 1 to 132)
+  AUTHORS   Liu,J. and Li,Y.
+  TITLE     New taxon of pathogenic fungus Embellisia astragali as Undifilum
+            astragali
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 132)
+  AUTHORS   Liu,J. and Li,Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (02-SEP-2014) College of Pastoral Agriculture Science and
+            Technology, Lanzhou University, State Key Laboratory of Grassland
+            Agro-ecosystem, P. O. Box 61, Lanzhou, Gansu 730020, China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..132
+                     /organism="Embellisia astragali"
+                     /strain="MHLZUlxl12"
+                     /isolation_source="Astragalus adsurgens"
+                     /db_xref="taxon:644589"
+     Protein         <1..>132
+                     /product="major allergen alt a1"
+     Region          21..117
+                     /region_name="Alt_A1"
+                     /note="Alternaria alternata allergen Alt a 1; cd12798"
+                     /db_xref="CDD:213998"
+     Site            order(76..78,86,88,95..97,107..112,114)
+                     /site_type="other"
+                     /note="homodimer interface [polypeptide binding]"
+                     /db_xref="CDD:213998"
+     CDS             1..132
+                     /coded_by="join(KM457064.1:<1..312,KM457064.1:373..>457)"
+                     /codon_start=2
+ORIGIN      
+        1 sqfaaaalvs aapfesrpvn pscanpiagd fiwkvskfeg rksdgiytrf sfnikatndg
+       61 aleanctaqa dkleehkwys cdklfsfsfn sdrngllvkr veneetvfgt tsipnmcgka
+      121 pgtqdsprqn vg
+//
+
+LOCUS       AIZ66407                 132 aa            linear   PLN 16-DEC-2014
+DEFINITION  major allergen alt a1, partial [Embellisia astragali].
+ACCESSION   AIZ66407
+VERSION     AIZ66407.1  GI:731772575
+DBSOURCE    accession KM457063.1
+KEYWORDS    .
+SOURCE      Embellisia astragali
+  ORGANISM  Embellisia astragali
+            Eukaryota; Fungi; Dikarya; Ascomycota; Pezizomycotina;
+            Dothideomycetes; Pleosporomycetidae; Pleosporales; Pleosporineae;
+            Pleosporaceae; Embellisia.
+REFERENCE   1  (residues 1 to 132)
+  AUTHORS   Liu,J. and Li,Y.
+  TITLE     New taxon of pathogenic fungus Embellisia astragali as Undifilum
+            astragali
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 132)
+  AUTHORS   Liu,J. and Li,Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (02-SEP-2014) College of Pastoral Agriculture Science and
+            Technology, Lanzhou University, State Key Laboratory of Grassland
+            Agro-ecosystem, P. O. Box 61, Lanzhou, Gansu 730020, China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..132
+                     /organism="Embellisia astragali"
+                     /strain="MHLZUzcy12"
+                     /isolation_source="Astragalus adsurgens"
+                     /db_xref="taxon:644589"
+     Protein         <1..>132
+                     /product="major allergen alt a1"
+     Region          24..117
+                     /region_name="Alt_A1"
+                     /note="Alternaria alternata allergen Alt a 1; cd12798"
+                     /db_xref="CDD:213998"
+     Site            order(76..78,86,88,95..97,107..112,114)
+                     /site_type="other"
+                     /note="homodimer interface [polypeptide binding]"
+                     /db_xref="CDD:213998"
+     CDS             1..132
+                     /coded_by="join(KM457063.1:<1..312,KM457063.1:373..>457)"
+                     /codon_start=2
+ORIGIN      
+        1 sqfaaaalvs aapfesrpvn pswpnpiagd fiwkvskfeg rksdgiytrf sfnikatndg
+       61 aleanctaqa dkleehkwys cdklfsfsfn sdrngllvkr veneetvfgt tsipnmcgka
+      121 pgtqdsprqn la
+//
+
+LOCUS       AIZ66406                 132 aa            linear   PLN 16-DEC-2014
+DEFINITION  major allergen alt a1, partial [Embellisia astragali].
+ACCESSION   AIZ66406
+VERSION     AIZ66406.1  GI:731772572
+DBSOURCE    accession KM457062.1
+KEYWORDS    .
+SOURCE      Embellisia astragali
+  ORGANISM  Embellisia astragali
+            Eukaryota; Fungi; Dikarya; Ascomycota; Pezizomycotina;
+            Dothideomycetes; Pleosporomycetidae; Pleosporales; Pleosporineae;
+            Pleosporaceae; Embellisia.
+REFERENCE   1  (residues 1 to 132)
+  AUTHORS   Liu,J. and Li,Y.
+  TITLE     New taxon of pathogenic fungus Embellisia astragali as Undifilum
+            astragali
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 132)
+  AUTHORS   Liu,J. and Li,Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (02-SEP-2014) College of Pastoral Agriculture Science and
+            Technology, Lanzhou University, State Key Laboratory of Grassland
+            Agro-ecosystem, P. O. Box 61, Lanzhou, Gansu 730020, China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..132
+                     /organism="Embellisia astragali"
+                     /strain="MHLZU0408"
+                     /isolation_source="Astragalus adsurgens"
+                     /db_xref="taxon:644589"
+     Protein         <1..>132
+                     /product="major allergen alt a1"
+     Region          24..117
+                     /region_name="Alt_A1"
+                     /note="Alternaria alternata allergen Alt a 1; cd12798"
+                     /db_xref="CDD:213998"
+     Site            order(76..78,86,88,95..97,107..112,114)
+                     /site_type="other"
+                     /note="homodimer interface [polypeptide binding]"
+                     /db_xref="CDD:213998"
+     CDS             1..132
+                     /coded_by="join(KM457062.1:<1..312,KM457062.1:373..>457)"
+                     /codon_start=2
+ORIGIN      
+        1 slfaaaalvs aapfesrpvn pswpnpiagd fiwkvskfeg rksdgiytrf sfnikatndg
+       61 aleanctaqa dkleehkwys cdklfsfsfn sdrngllvkr veneetvfgt tsipnmcgka
+      121 pgtqdsprqn va
+//
+
+LOCUS       AIW07473                 140 aa            linear   PLN 09-NOV-2014
+DEFINITION  major allergen alt a1, partial [Alternaria petroselini].
+ACCESSION   AIW07473
+VERSION     AIW07473.1  GI:702101981
+DBSOURCE    accession KM102531.1
+KEYWORDS    .
+SOURCE      Alternaria petroselini
+  ORGANISM  Alternaria petroselini
+            Eukaryota; Fungi; Dikarya; Ascomycota; Pezizomycotina;
+            Dothideomycetes; Pleosporomycetidae; Pleosporales; Pleosporineae;
+            Pleosporaceae; Alternaria.
+REFERENCE   1  (residues 1 to 140)
+  AUTHORS   Bulajic,A., Stankovic,I., Milojevic,K. and Krstic,B.
+  TITLE     Alternaria petroselini pathogen of parsley in Serbia
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 140)
+  AUTHORS   Bulajic,A., Stankovic,I., Milojevic,K. and Krstic,B.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (02-JUL-2014) Institute of Phytomedicine, Department of
+            Phytopathology, University of Belgrade-Faculty of Agriculture,
+            Nemanjina 6, Belgrade 11080, Serbia
+FEATURES             Location/Qualifiers
+     source          1..140
+                     /organism="Alternaria petroselini"
+                     /isolate="Ap95"
+                     /host="Petroselinum crispum (parsley)"
+                     /db_xref="taxon:119924"
+                     /country="Serbia"
+                     /collection_date="2005"
+                     /note="PCR_primers=fwd_name: alt-for, rev_name: alt-rev"
+     Protein         <1..>140
+                     /product="major allergen alt a1"
+     Region          23..140
+                     /region_name="Alt_A1"
+                     /note="Alternaria alternata allergen Alt a 1; cd12798"
+                     /db_xref="CDD:213998"
+     Site            order(79..81,93,95,100..102,113..118,120,140)
+                     /site_type="other"
+                     /note="homodimer interface [polypeptide binding]"
+                     /db_xref="CDD:213998"
+     CDS             1..140
+                     /gene="alt a1"
+                     /coded_by="join(KM102531.1:<1..330,KM102531.1:392..>483)"
+                     /codon_start=2
+ORIGIN      
+        1 iaslfaaagl aaaaplesrq dnascpvatq gdyvwkvsef ygrqpegtyy nsisfnvkat
+       61 nggtldytcs ssadkledhk wyscgenslm dfsfdsdrkg llfkqkvsdd ttyvatttip
+      121 sycraggngp kdfvcqgvsd
+//
+
+LOCUS       AIW07472                 141 aa            linear   PLN 09-NOV-2014
+DEFINITION  major allergen alt a1, partial [Alternaria petroselini].
+ACCESSION   AIW07472
+VERSION     AIW07472.1  GI:702101977
+DBSOURCE    accession KM102530.1
+KEYWORDS    .
+SOURCE      Alternaria petroselini
+  ORGANISM  Alternaria petroselini
+            Eukaryota; Fungi; Dikarya; Ascomycota; Pezizomycotina;
+            Dothideomycetes; Pleosporomycetidae; Pleosporales; Pleosporineae;
+            Pleosporaceae; Alternaria.
+REFERENCE   1  (residues 1 to 141)
+  AUTHORS   Bulajic,A., Stankovic,I., Milojevic,K. and Krstic,B.
+  TITLE     Alternaria petroselini pathogen of parsley in Serbia
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 141)
+  AUTHORS   Bulajic,A., Stankovic,I., Milojevic,K. and Krstic,B.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (02-JUL-2014) Institute of Phytomedicine, Department of
+            Phytopathology, University of Belgrade-Faculty of Agriculture,
+            Nemanjina 6, Belgrade 11080, Serbia
+FEATURES             Location/Qualifiers
+     source          1..141
+                     /organism="Alternaria petroselini"
+                     /isolate="Ap69"
+                     /host="Petroselinum crispum (parsley)"
+                     /db_xref="taxon:119924"
+                     /country="Serbia"
+                     /collection_date="2005"
+                     /note="PCR_primers=fwd_name: alt-for, rev_name: alt-rev"
+     Protein         <1..>141
+                     /product="major allergen alt a1"
+     Region          23..141
+                     /region_name="Alt_A1"
+                     /note="Alternaria alternata allergen Alt a 1; cd12798"
+                     /db_xref="CDD:213998"
+     Site            order(79..81,93,95,100..102,113..118,120,140)
+                     /site_type="other"
+                     /note="homodimer interface [polypeptide binding]"
+                     /db_xref="CDD:213998"
+     CDS             1..141
+                     /gene="alt a1"
+                     /coded_by="join(KM102530.1:<1..330,KM102530.1:392..>484)"
+                     /codon_start=2
+ORIGIN      
+        1 iaslfaaagl aaaaplesrq dnascpvatq gdyvwkvsef ygrqpegtyy nsisfnvkat
+       61 nggtldytcs ssadkledhk wyscgenslm dfsfdsdrkg llfkqkvsdd ttyvatttip
+      121 sycraggngp kdfvcqgvsd a
+//
+
+LOCUS       AIV43888                 131 aa            linear   PLN 05-NOV-2014
+DEFINITION  Alt a 1 major allergen, partial [Alternaria alternata].
+ACCESSION   AIV43888
+VERSION     AIV43888.1  GI:701225653
+DBSOURCE    accession KM289069.1
+KEYWORDS    .
+SOURCE      Alternaria alternata
+  ORGANISM  Alternaria alternata
+            Eukaryota; Fungi; Dikarya; Ascomycota; Pezizomycotina;
+            Dothideomycetes; Pleosporomycetidae; Pleosporales; Pleosporineae;
+            Pleosporaceae; Alternaria; Alternaria alternata group.
+REFERENCE   1  (residues 1 to 131)
+  AUTHORS   Mirhosseini,H.A., Babaeizad,V., Hashemi,L. and Basavand,E.
+  TITLE     First Report of Agave Leaf Spot Caused by Alternaria alternata in
+            Iran
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 131)
+  AUTHORS   Mirhosseini,H.A., Babaeizad,V., Hashemi,L. and Basavand,E.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (03-AUG-2014) Plant Protection, Sari Agricultural
+            Sciences and Natural Resources University, Sea Road 9 miles, P.O.
+            Box 578, Sari, Mazandaran, Iran
+FEATURES             Location/Qualifiers
+     source          1..131
+                     /organism="Alternaria alternata"
+                     /isolate="AaM93"
+                     /host="Agave americana"
+                     /db_xref="taxon:5599"
+                     /country="Iran"
+                     /collected_by="H.A. Mirhosseini"
+                     /PCR_primers="fwd_name: alt-for, fwd_seq:
+                     atgcagttcaccaccatcgc, rev_name: alt-rev, rev_seq:
+                     acgagggtgaygtaggcgtc"
+     Protein         <1..>131
+                     /product="Alt a 1 major allergen"
+     Region          10..131
+                     /region_name="Alt_A1"
+                     /note="Alternaria alternata allergen Alt a 1; cd12798"
+                     /db_xref="CDD:213998"
+     Site            order(68..70,82,84,89..91,102..107,109,129,131)
+                     /site_type="other"
+                     /note="homodimer interface [polypeptide binding]"
+                     /db_xref="CDD:213998"
+     CDS             1..131
+                     /coded_by="join(KM289069.1:<1..296,KM289069.1:357..>452)"
+ORIGIN      
+        1 aaaplesrqd tascpvtteg dyvwkisefy grkpegtyyn slgfnikatn ggtldftcsh
+       61 sadkledhtw yscgensfmd fsfdsdrngl llkqkvsddi tyvatatlpn ycraggngpk
+      121 dfvcqgvada s
+//
+
+LOCUS       AIG55094                 129 aa            linear   PLN 28-JUL-2014
+DEFINITION  major allergen alt a1, partial [Alternaria sp. NCP-2014b].
+ACCESSION   AIG55094
+VERSION     AIG55094.1  GI:667480963
+DBSOURCE    accession KJ862258.1
+KEYWORDS    .
+SOURCE      Alternaria sp. NCP-2014b
+  ORGANISM  Alternaria sp. NCP-2014b
+            Eukaryota; Fungi; Dikarya; Ascomycota; Pezizomycotina;
+            Dothideomycetes; Pleosporomycetidae; Pleosporales; Pleosporineae;
+            Pleosporaceae; Alternaria.
+REFERENCE   1  (residues 1 to 129)
+  AUTHORS   Paul,N.C., Deng,J.X., Lee,J.H., Lee,H.B. and Yu,S.H.
+  TITLE     Alternaria bariana sp. nov., a new species from Bangladesh on seeds
+            of Cucurbita maxima (Cucurbitaceae)
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 129)
+  AUTHORS   Paul,N.C., Deng,J.X., Lee,J.H., Lee,H.B. and Yu,S.H.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (22-MAY-2014) Applied Bioscience & Biotechnology, Chonnam
+            National University, 77 Yongbong-ro, Buk-gu, Gwangju 500-757,
+            Republic of Korea
+FEATURES             Location/Qualifiers
+     source          1..129
+                     /organism="Alternaria sp. NCP-2014b"
+                     /strain="EGS 44-048"
+                     /isolate="CNU131061"
+                     /db_xref="taxon:1503996"
+                     /collected_by="JX Deng,NC Paul"
+                     /identified_by="NC Paul,JX Deng"
+     Protein         <1..>129
+                     /product="major allergen alt a1"
+     Region          19..129
+                     /region_name="Alt_A1"
+                     /note="Alternaria alternata allergen Alt a 1; cd12798"
+                     /db_xref="CDD:213998"
+     Site            order(77..79,91,93,98..100,111..116,118)
+                     /site_type="other"
+                     /note="homodimer interface [polypeptide binding]"
+                     /db_xref="CDD:213998"
+     CDS             1..129
+                     /gene="Alt a1"
+                     /coded_by="join(KJ862258.1:<1..314,KJ862258.1:375..>448)"
+                     /codon_start=2
+ORIGIN      
+        1 slfaaaglaa aaplesrqdt ascpvttegd yvwkisefyg rkpegtyyns lgfnikatng
+       61 gtldftcshs adkledhtwy scgensfmdf sfdsdrngll lkqkdvssit yvatatlpny
+      121 craggngpk
+//
+
+LOCUS       AHZ97469                 507 aa            linear   PLN 22-MAY-2015
+DEFINITION  subtilisin-like serine protease, partial [Alternaria alternata].
+ACCESSION   AHZ97469
+VERSION     AHZ97469.1  GI:636530596
+DBSOURCE    accession KJ558435.1
+KEYWORDS    .
+SOURCE      Alternaria alternata
+  ORGANISM  Alternaria alternata
+            Eukaryota; Fungi; Dikarya; Ascomycota; Pezizomycotina;
+            Dothideomycetes; Pleosporomycetidae; Pleosporales; Pleosporineae;
+            Pleosporaceae; Alternaria; Alternaria alternata group.
+REFERENCE   1  (residues 1 to 507)
+  AUTHORS   Gabriel,M.F., Postigo,I., Sunen,E., Gutierrez-Rodriguez,A.,
+            Guisantes,J.A., Tomaz,C.T. and Martinez,J.
+  TITLE     Cloning and characterization of the subtilisin like serine protease
+            allergen from Alternaria alternata
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 507)
+  AUTHORS   Gabriel,M.F., Postigo,I., Sunen,E., Gutierrez-Rodriguez,A.,
+            Guisantes,J.A., Tomaz,C.T. and Martinez,J.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (11-MAR-2014) Department of Immunology, Microbiology and
+            Parasitology, Faculty of Pharmacy, University of the Basque
+            Country, Paseo de la Universidad, 7, Vitoria-Gasteiz, Alava 01006,
+            Spain
+FEATURES             Location/Qualifiers
+     source          1..507
+                     /organism="Alternaria alternata"
+                     /strain="CBS 104.26"
+                     /culture_collection="CBS:104.26"
+                     /db_xref="taxon:5599"
+     Protein         <1..507
+                     /product="subtilisin-like serine protease"
+                     /EC_number="3.4.21.62"
+     CDS             1..507
+                     /coded_by="KJ558435.1:<1..1524"
+ORIGIN      
+        1 pqrqmdsake vpnsymvvfk khvkdaskhh dwvqsvhskn neermelrkr ssqfpvttev
+       61 fdglkhvyem agmkgysghf ddetieairn hpdvdyierd sevhtlghde peieknspwg
+      121 larishrdsl sfgtwnkyly aadggegvdv yvidtgtntk hvdfegrakw gktipngdad
+      181 edgnghgthc sgtvagkkyg vakkahvyav kvlrsngsgt msdvvkgvey aakahsdtvq
+      241 aakdgkkkgf kgsaanmslg ggksttldla vnaavdagih favaagndna dscnyspaaa
+      301 enavtvgast llderayfsn ygkcndifap glnilstwig sehatntisg tsmasphiag
+      361 llaymlslqp akdsayavad itpkklkanl isvatvgals dvprntknil awngggssny
+      421 teivekggyt vkkaaeknee esefritips lseieddfek akesagrnah rvggklqhle
+      481 aeiedfiaee mesmfekvke rvasqkl
+//
