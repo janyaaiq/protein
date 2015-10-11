@@ -1,0 +1,12 @@
+in_data	key word	field	not in	in
+1	Institute of Allergy	9|10	3	2
+2	Allergy	1|2|3|4|5|6|7|8||11|12	a	A
+3	allerg	4-12	5	4
+4	Method: conceptual translation	10	6	b
+6	Predicted|partial|hypothetical|putative|unnamed	2	7	c
+7	Genoscope	9	8	d
+8	Transcript exon combination|CDS exon combination|predicted by automated computation|Sequencing Technology :: Sanger dideoxy sequencing	10	9	e
+9	Exp. Method: X-Ray Diffraction	4-11	B	f
+5	Conceptual translation	10	10	g
+10	Transcript exon combination|CDS exon combination|predicted by automated computation|Sequencing Technology :: Sanger dideoxy sequencing	10	11	h
+11	Exp. Method: X-Ray Diffraction	4-11	C	i
