@@ -15,16 +15,15 @@
 <body style="background-color: #f0f0f0">
   <div class="protein-container common-border">
     <!-- 页面标题-->
-    <div class="title common-border common-margin">蛋白质分类</div>
+    <div class="title common-border common-margin">The System for Identification of Allergen Sequences</div>
     <!-- 页面标题-->
     <!-- 页面导航-->
     <div class="nav clearfix  common-margin common-border">
-      <div class="nav-son common-border common-margin bg-primary" onclick="change_bg_color(this,'jianjie')"><a href="#">简介</a></div>
-      <div class="nav-son common-border common-margin" onclick="change_bg_color(this,'show-container-content')"><a href="#">分类</a></div>
-      <div class="nav-son common-border common-margin" onclick="change_bg_color(this,'download')"><a href="#">下载</a></div>
-      <div class="nav-son common-border common-margin" onclick="change_bg_color(this,'operation')"><a href="#">操作记录</a></div>
-      <div class="nav-son common-border common-margin" onclick="change_bg_color(this,'help')"><a href="#">帮助</a></div>
-      <div class="nav-son common-border common-margin"><a href="#">登录</a></div>
+      <div class="nav-son common-border common-margin bg-primary" onclick="change_bg_color(this,'jianjie')"><a href="#">Home</a></div>
+      <div class="nav-son common-border common-margin" onclick="change_bg_color(this,'show-container-content')"><a href="#">Classify</a></div>
+      <div class="nav-son common-border common-margin" onclick="change_bg_color(this,'operation')"><a href="#">History</a></div>
+      <div class="nav-son common-border common-margin" onclick="change_bg_color(this,'help')"><a href="#">Help</a></div>
+      <div class="nav-son common-border common-margin"><a href="javascript:show_modals('myModal-logout');">Logout</a></div>
     </div>
     <!-- 页面导航-->
     <!-- 展示内容区域-->
@@ -34,12 +33,11 @@
       <div class="show-container-content common-margin clearfix">
         <!-- 左边部分-->
         <div class="left">
-          <div class="list"><button class="btn btn-primary" onclick="show_page('load-data')">load数据</button></div>
-          <div class="list"><button class="btn btn-primary" onclick="show_page('classify-data')">数据分类</button></div>
-          <div class="list"><button class="btn btn-primary" onclick="show_page('classify-result')">分类结果</button></div>
-          <div class="list"><button class="btn btn-primary" onclick="show_page('self-classify')">手动分类</button></div>
-          <div class="list"><button class="btn btn-primary" onclick="show_page('blast')">blast</button></div>
-          <div class="list"><button class="btn btn-primary" onclick="show_page('end-result')">最终结果</button></div>
+          <div class="list"><button class="btn btn-primary" onclick="show_page('load-data')">load data</button></div>
+          <div class="list"><button class="btn btn-primary" onclick="show_page('classify-data')">preliminary classify</button></div>
+          <div class="list"><button class="btn btn-primary" onclick="show_page('classify-result')">Summary</button></div>
+          <div class="list"><button class="btn btn-primary" onclick="show_page('self-classify')">Manual examination</button></div>
+          <div class="list"><button class="btn btn-primary" onclick="show_page('blast')">Blast</button></div>
         </div>
         <!-- 左边部分-->
         <!-- 右边部分-->
@@ -52,22 +50,19 @@
                 <thead>
                 <tr>
                   <td class="text-center"> 名称</td>
-                  <td class="text-center">数量</td>
-                  <td class="text-center">数据版本信息</td>
+                  <td class="text-center">描述</td>
                   <td class="text-center">选择数据</td>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                   <td class="text-center">data1</td>
-                  <td class="text-center">10000</td>
-                  <td class="text-center">2015.09.09</td>
+                  <td class="text-center">10000个蛋白质 2015.10.11</td>
                   <td class="text-center"><button class="btn btn-primary">load</button></td>
                 </tr>
                 <tr>
                   <td class="text-center">data1</td>
-                  <td class="text-center">10000</td>
-                  <td class="text-center">2015.09.09</td>
+                  <td class="text-center">10000个蛋白质 2015.10.11</td>
                   <td class="text-center"><button class="btn btn-primary">load</button></td>
                 </tr>
                 </tbody>
@@ -76,104 +71,313 @@
           </div>
           <!-- load数据模块-->
           <!-- 数据分类模块-->
-          <div class="classify-data display-none">数据分类</div>
+          <div class="classify-data display-none">
+            <div class="classify-data-table">
+              <table class="table table-bordered">
+                <thead>
+                <tr>
+                  <td>名称</td>
+                  <td>描述</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>class A</td>
+                  <td>190880个蛋白质 2015.10.10</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- classify按钮 开始-->
+            <div class="classify-data-button">
+              <a href="#" class="btn btn-primary" onclick="show_modals('myModal-classify')">classify</a>
+            </div>
+            <!-- classify按钮 结束-->
+          </div>
           <!-- 数据分类模块-->
           <!-- 分类结果模块-->
-          <div class="classify-result display-none">分类结果</div>
+          <div class="classify-result display-none">
+            <div class="classify-result-table">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <td>classes</td>
+                    <td>Total number</td>
+                    <td>Manual examination</td></tr>
+                </thead>
+                <tbody>
+                <script id="myTemplate" type="text/x-jquery-tmpl">
+                <tr><td>${$data.url}</td><td>${$data.name}</td><td>${$item.getTags(';')}</td></tr>
+                </script>
+                <tr>
+                  <td>classes1</td>
+                  <td>Total number2</td>
+                  <td onclick="show_manual(this,'myModal-manual')"><a href="javascript:;" class="btn btn-primary">Manual examination</a></td>
+                </tr>
+                <tr>
+                  <td>classes</td>
+                  <td>Total number</td>
+                  <td><a href="#" class="btn btn-primary">Manual examination</a></td>
+                </tr>
+                <tr>
+                  <td>classes</td>
+                  <td>Total number</td>
+                  <td><a href="#" class="btn btn-primary">Manual examination</a></td>
+                </tr>
+                <tr>
+                  <td>classes</td>
+                  <td>Total number</td>
+                  <td><a href="#" class="btn btn-primary">Manual examination</a></td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
           <!-- 分类结果模块-->
           <!-- 手动分类模块-->
-          <div class="self-classify display-none">手动分类</div>
+          <div class="self-classify display-none">
+            <!-- manual模块 开始-->
+            <div class="manual">
+              <div class="manual-title">protein summary</div>
+              <div class="manual-content clearfix">
+                <div class="manual-left">
+                  <div class="text-center">
+                    <ul class="pagination">
+                      <li><a href="#"> < </a></li>
+                      <li><a href="#">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#"> > </a></li>
+                    </ul>
+                  </div>
+                  <div class="manual-left-content">
+                    LOCUS       KFK37302                 487 aa            linear   PLN 21-AUG-2014
+                    DEFINITION  hypothetical protein AALP_AA4G239600 [Arabis alpina].
+                    ACCESSION   KFK37302
+                    VERSION     KFK37302.1  GI:674244537
+                    DBLINK      BioProject: PRJNA241291
+                    BioSample: SAMN02689159
+                    DBSOURCE    accession CM002872.1
+                    KEYWORDS    .
+                    SOURCE      Arabis alpina (gray rockcress)
+                    ORGANISM  Arabis alpina
+                    Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+                    Spermatophyta; Magnoliophyta; eudicotyledons; Gunneridae;
+                    Pentapetalae; rosids; malvids; Brassicales; Brassicaceae;
+                    Arabideae; Arabis.
+                    REFERENCE   1  (residues 1 to 487)
+                    AUTHORS   Willing,E.-M.
+                    TITLE     The reference genome of Arabis alpina
+                    JOURNAL   Unpublished
+                    REFERENCE   2  (residues 1 to 487)
+                    AUTHORS   Willing,E.-M.
+                    TITLE     Direct Submission
+                    JOURNAL   Submitted (03-JUN-2014) Plant Developmental Biology, Max Planck
+                    Institute for Plant Breeding Research, Carl-von-Linne-Weg 10,
+                    Cologne 50829, Germany
+                    COMMENT     Method: conceptual translation.
+                    beta-barrel; pfam03330"
+                    /db_xref="CDD:251879"
+                    Region          390..472
+                    /region_name="Pollen_allerg_1"
+                    /note="Pollen allergen; pfam01357"
+                    /db_xref="CDD:250557"
+                    CDS             1..487
+                    /locus_tag="AALP_AA4G239600"
+                    /coded_by="join(CM002872.1:21531459..21531621,
+                    CM002872.1:21531751..21531863,
+                    CM002872.1:21531953..21532140,
+                    CM002872.1:21532225..21532520,
+                    CM002872.1:21534692..21534769,
+                    CM002872.1:21534864..21534976,
+                    CM002872.1:21535807..21535994,
+                    CM002872.1:21536264..21536588)"
+                    /note="beta-expansin precursor"
+                    ORIGIN
+                    1 mtmnllfglt cfllnlahcf npkklnvsav gtagsdwssa gatwygsptg ygsdggacgy
+                    61 gntvaqppfs amvsaggasl fksgegcgac yqikctsksa csgnpvtvvi tdecpgcvte
+                    121 svhfdlsgts fgamaisgqd sqlrnvgvlq ilyrkvecny vgktvtfkve egsntnyfaa
+                    181 lveyedgdge igrvelkqal dsdtwltmsh lwgavwrldv tsplraplsl rvtsldsset
+                    241 vvasnvipag wkpaagtsgs gwssagatwy gsptgygsdg gacgyrndva qapfssmvsa
+                    301 ggpslfksgk gcgacyqvkc tsnsvcsgnp vtvvitdecp gcvtesvhfd lsgtsfgama
+                    361 ksgqdsqlrn vgvlqilykk vecnyngetv tfrvdegsnt nyfaalveyv ngdgeigrve
+                    421 lkqasnsdtw ltmshswgav wkldvtsplr aplslrvtsv sgetvvasnv ipagwkpgak
+                    481 yksnvnf
+                    1 mtmnllfglt cfllnlahcf npkklnvsav gtagsdwssa gatwygsptg ygsdggacgy
+                    61 gntvaqppfs amvsaggasl fksgegcgac yqikctsksa csgnpvtvvi tdecpgcvte
+                    121 svhfdlsgts fgamaisgqd sqlrnvgvlq ilyrkvecny vgktvtfkve egsntnyfaa
+                    181 lveyedgdge igrvelkqal dsdtwltmsh lwgavwrldv tsplraplsl rvtsldsset
+                    241 vvasnvipag wkpaagtsgs gwssagatwy gsptgygsdg gacgyrndva qapfssmvsa
+                    301 ggpslfksgk gcgacyqvkc tsnsvcsgnp vtvvitdecp gcvtesvhfd lsgtsfgama
+                    361 ksgqdsqlrn vgvlqilykk vecnyngetv tfrvdegsnt nyfaalveyv ngdgeigrve
+                    421 lkqasnsdtw ltmshswgav wkldvtsplr aplslrvtsv sgetvvasnv ipagwkpgak
+                    481 yksnvnf
+                    1 mtmnllfglt cfllnlahcf npkklnvsav gtagsdwssa gatwygsptg ygsdggacgy
+                    61 gntvaqppfs amvsaggasl fksgegcgac yqikctsksa csgnpvtvvi tdecpgcvte
+                    121 svhfdlsgts fgamaisgqd sqlrnvgvlq ilyrkvecny vgktvtfkve egsntnyfaa
+                    181 lveyedgdge igrvelkqal dsdtwltmsh lwgavwrldv tsplraplsl rvtsldsset
+                    241 vvasnvipag wkpaagtsgs gwssagatwy gsptgygsdg gacgyrndva qapfssmvsa
+                    301 ggpslfksgk gcgacyqvkc tsnsvcsgnp vtvvitdecp gcvtesvhfd lsgtsfgama
+                    361 ksgqdsqlrn vgvlqilykk vecnyngetv tfrvdegsnt nyfaalveyv ngdgeigrve
+                    421 lkqasnsdtw ltmshswgav wkldvtsplr aplslrvtsv sgetvvasnv ipagwkpgak
+                    481 yksnvnf
+                    1 mtmnllfglt cfllnlahcf npkklnvsav gtagsdwssa gatwygsptg ygsdggacgy
+                    61 gntvaqppfs amvsaggasl fksgegcgac yqikctsksa csgnpvtvvi tdecpgcvte
+                    121 svhfdlsgts fgamaisgqd sqlrnvgvlq ilyrkvecny vgktvtfkve egsntnyfaa
+                    181 lveyedgdge igrvelkqal dsdtwltmsh lwgavwrldv tsplraplsl rvtsldsset
+                    241 vvasnvipag wkpaagtsgs gwssagatwy gsptgygsdg gacgyrndva qapfssmvsa
+                    301 ggpslfksgk gcgacyqvkc tsnsvcsgnp vtvvitdecp gcvtesvhfd lsgtsfgama
+                    361 ksgqdsqlrn vgvlqilykk vecnyngetv tfrvdegsnt nyfaalveyv ngdgeigrve
+                    421 lkqasnsdtw ltmshswgav wkldvtsplr aplslrvtsv sgetvvasnv ipagwkpgak
+                    481 yksnvnf
+                    1 mtmnllfglt cfllnlahcf npkklnvsav gtagsdwssa gatwygsptg ygsdggacgy
+                    61 gntvaqppfs amvsaggasl fksgegcgac yqikctsksa csgnpvtvvi tdecpgcvte
+                    121 svhfdlsgts fgamaisgqd sqlrnvgvlq ilyrkvecny vgktvtfkve egsntnyfaa
+                    181 lveyedgdge igrvelkqal dsdtwltmsh lwgavwrldv tsplraplsl rvtsldsset
+                    241 vvasnvipag wkpaagtsgs gwssagatwy gsptgygsdg gacgyrndva qapfssmvsa
+                    301 ggpslfksgk gcgacyqvkc tsnsvcsgnp vtvvitdecp gcvtesvhfd lsgtsfgama
+                    361 ksgqdsqlrn vgvlqilykk vecnyngetv tfrvdegsnt nyfaalveyv ngdgeigrve
+                    421 lkqasnsdtw ltmshswgav wkldvtsplr aplslrvtsv sgetvvasnv ipagwkpgak
+                    481 yksnvnf
+                    1 mtmnllfglt cfllnlahcf npkklnvsav gtagsdwssa gatwygsptg ygsdggacgy
+                    61 gntvaqppfs amvsaggasl fksgegcgac yqikctsksa csgnpvtvvi tdecpgcvte
+                    121 svhfdlsgts fgamaisgqd sqlrnvgvlq ilyrkvecny vgktvtfkve egsntnyfaa
+                    181 lveyedgdge igrvelkqal dsdtwltmsh lwgavwrldv tsplraplsl rvtsldsset
+                    241 vvasnvipag wkpaagtsgs gwssagatwy gsptgygsdg gacgyrndva qapfssmvsa
+                    301 ggpslfksgk gcgacyqvkc tsnsvcsgnp vtvvitdecp gcvtesvhfd lsgtsfgama
+                    361 ksgqdsqlrn vgvlqilykk vecnyngetv tfrvdegsnt nyfaalveyv ngdgeigrve
+                    421 lkqasnsdtw ltmshswgav wkldvtsplr aplslrvtsv sgetvvasnv ipagwkpgak
+                    481 yksnvnf
+
+                  </div>
+                </div>
+                <div class="manual-right">
+                  <div class="manual-right-title">change a state</div>
+                  <div class="manual-right-state">origin state: <span>unprocess</span></div>
+                  <div class="manual-right-reason">origin reason: <span>no reason</span></div>
+                  <div class="manual-right-select">
+                    <p>1.select a state</p>
+                    <select name="manual-right-select" id="manual-right-select">
+                      <option value="1">save</option>
+                      <option value="1">discard</option>
+                      <option value="1">uncertainty</option>
+                    </select>
+                  </div>
+                  <div class="manual-right-inputreason">
+                    <p>2.write your reason</p>
+                    <textarea name="textarea-reson" id="textarea-reson" cols="30" rows="10"></textarea>
+                  </div>
+                  <div class="manual-right-submit">
+                    <a href="#" class="btn btn-primary">submit</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- manual模块 结束-->
+          </div>
           <!-- 手动分类模块-->
           <!-- blast模块-->
           <div class="blast display-none">
-            <div class="blast-table">
-              <table class="table table-bordered">
-                <thead>
-                <tr>
-                  <td>class</td>
-                  <td>类1</td>
-                  <td>类2</td>
-                  <td>类3</td>
-                  <td>类4</td>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                  <td>G</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>G</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                </tbody>
-              </table>
+            <div class="blast-previous">
+              <p class="blast-previous-adver">
+                You have finish the previous analysis, the summary of each state are in below table.
+              </p>
+              <div class="blast-previous-table">
+                <table class="table table-bordered">
+                  <thead>
+                  <tr>
+                    <td>State</td>
+                    <td>Number of protein</td>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>save</td>
+                    <td>1000</td>
+                  </tr>
+                  <tr>
+                    <td>save</td>
+                    <td>1000</td>
+                  </tr>
+                  <tr>
+                    <td>save</td>
+                    <td>1000</td>
+                  </tr>
+                  <tr>
+                    <td>save</td>
+                    <td>1000</td>
+                  </tr>
+                  <tr>
+                    <td>save</td>
+                    <td>1000</td>
+                  </tr>
+                  <tr>
+                    <td>save</td>
+                    <td>1000</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="blast-previous-adver">
+                If you want do a blast for the "Save" and "Uncertainty" protein, you can click the "Blast" button.
+              </p>
+              <a href="#" class="btn btn-primary">Blast</a>
             </div>
-            <button class="btn btn-primary">blast</button>
+            <div class="blast-blasted">
+              <p class="blast-previous-adver">
+                You have done a Blast, the result of the Blast analysis are in below table.
+              </p>
+              <div class="blast-previous-table">
+                <table class="table table-bordered">
+                  <thead>
+                  <tr>
+                    <td>State</td>
+                    <td>Number of protein</td>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>save</td>
+                    <td>1000</td>
+                  </tr>
+                  <tr>
+                    <td>save</td>
+                    <td>1000</td>
+                  </tr>
+                  <tr>
+                    <td>save</td>
+                    <td>1000</td>
+                  </tr>
+                  <tr>
+                    <td>save</td>
+                    <td>1000</td>
+                  </tr>
+                  <tr>
+                    <td>save</td>
+                    <td>1000</td>
+                  </tr>
+                  <tr>
+                    <td>save</td>
+                    <td>1000</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="blast-previous-adver">
+                If you want save the classify result, please enter the project name and click the "Save" button.
+              </p>
+              <div class="project-name">
+                <input type="text" placeholder="project name"> <a href="#" class="btn btn-primary">Save</a>
+              </div>
+              <p class="blast-previous-adver">
+                If you want dowload the Save and Uncertainty Protein, you can click the "Download" button.
+              </p>
+              <div>
+                <a href="#" class="btn btn-primary">Download</a>
+              </div>
+            </div>
           </div>
           <!-- blast模块-->
-          <!-- 最终结果模块-->
-          <div class="end-result display-none">
-            <div class="end-result-table">
-              <table class="table table-bordered">
-                <thead>
-                <tr>
-                  <td>列名1</td>
-                  <td>列名2</td>
-                  <td>列名3</td>
-                  <td>列名4</td>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                  <td>a</td>
-                  <td>a</td>
-                  <td>a</td>
-                  <td>a</td>
-                </tr>
-                <tr>
-                  <td>a</td>
-                  <td>a</td>
-                  <td>a</td>
-                  <td>a</td>
-                </tr>
-                <tr>
-                  <td>a</td>
-                  <td>a</td>
-                  <td>a</td>
-                  <td>a</td>
-                </tr>
-                <tr>
-                  <td>a</td>
-                  <td>a</td>
-                  <td>a</td>
-                  <td>a</td>
-                </tr>
-                <tr>
-                  <td>a</td>
-                  <td>a</td>
-                  <td>a</td>
-                  <td>a</td>
-                </tr>
-                <tr>
-                  <td>a</td>
-                  <td>a</td>
-                  <td>a</td>
-                  <td>a</td>
-                </tr>
-                </tbody>
-              </table>
-              <button class="btn btn-primary btn-download">download</button>
-            </div>
-          </div>
-          <!-- 最终结果模块-->
-
         </div>
         <!-- 右边部分-->
       </div>
@@ -183,11 +387,6 @@
         简介
       </div>
       <!-- 简介部分 结束-->
-      <!-- 下载页面 开始-->
-      <div class="download">
-        下载
-      </div>
-      <!-- 下载页面 结束-->
       <!-- 操作记录页面  开始-->
       <div class="operation">
         操作记录
@@ -202,7 +401,7 @@
     <!-- 展示内容区域-->
   </div>
 
-  <div class="hidden-block"></div>
+
   <!-- 模态框（Modal） -->
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
        aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
@@ -224,7 +423,7 @@
           <button type="button" class="btn btn-primary"
                   data-dismiss="modal">取消
           </button>
-          <button type="button" class="btn btn-warning" data-dismiss="modal">
+          <button type="button" class="btn btn-warning" onclick="show_classify_result_page();">
             确认
           </button>
         </div>
@@ -263,10 +462,68 @@
     </div>
   </div>
   <!-- /.modal -->
+  <!-- 模态框（Modal）  提示是否需要classify的模态框 -->
+  <div class="modal fade" id="myModal-classify" tabindex="-1" role="dialog"
+       aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close"
+                  data-dismiss="modal" aria-hidden="true">
+            &times;
+          </button>
+          <h4 class="modal-title" id="myModalLabel22">
+            <!--模态框（Modal）标题-->
+          </h4>
+        </div>
+        <div class="modal-body">
+          是否classify数据？
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary"
+                  data-dismiss="modal">取消
+          </button>
+          <button type="button" class="btn btn-warning" data-dismiss="modal">
+            确认
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.modal -->
+  <!-- 模态框（Modal）  logout模态框 -->
+  <div class="modal fade" id="myModal-logout" tabindex="-1" role="dialog"
+       aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close"
+                  data-dismiss="modal" aria-hidden="true">
+            &times;
+          </button>
+          <h4 class="modal-title" id="myModalLabel25">
+            <!--模态框（Modal）标题-->
+          </h4>
+        </div>
+        <div class="modal-body">
+          是否要logout？
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary"
+                  data-dismiss="modal">取消
+          </button>
+          <button type="button" class="btn btn-warning" onclick="logout();">
+            确认
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.modal -->
 
 <script src="js/jquery-2.1.4.min.js"></script>
   <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
+  <script src="js/jquery.tmpl.min.js"></script>
 <script src="js/common.js"></script>
 
 
