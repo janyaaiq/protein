@@ -22,3 +22,34 @@ function change_bg_color(obj,str){
   $("."+str).css("display","block");
 }
 
+function show_classify_result_page(){
+  $("#myModal").modal("hide");
+  show_page("classify-result");
+}
+function set_radio(obj){
+  if($(obj).attr("checked")){
+    $(obj).attr("checked",false) ;
+    $(obj).attr("value","0");
+  }else {
+    $(obj).attr("checked",true) ;
+    $(obj).attr("value","1");
+  }
+}
+function show_manual(obj,id){
+  //alert($(obj).find("a").text());
+  var a = $(obj).prev().eq(0);//a是用来保存搜索查询条件的
+  //alert(a.text());
+  $("#"+id).modal("show");
+  $('#'+id).modal().css({
+    width: '200px',
+    'margin-left': function () {
+      return -($(this).width() / 2);
+    }
+  });
+
+}
+
+function logout(){//退出登录
+  window.location.href = "login.html";
+}
+
